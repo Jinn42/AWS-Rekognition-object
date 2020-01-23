@@ -98,4 +98,7 @@ conda env remove -n Jin
 ### Change the AWS credentials (access key id and secret access key) and pic_name in the reko.py code
 
 ## Step4 Test picture on Rekognition API 
+```
+python ~/AWS-Rekognition-object/blob/master/reko.py
+```
 
