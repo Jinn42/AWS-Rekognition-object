@@ -20,7 +20,7 @@ Inbound rule:
 Outbound rule:  
 <div align=center><img width="400" height="150" src="https://github.com/Jinn42/AWS-Rekognition-object/blob/master/pic/outboundrule.png"/></div>  
 
-###launch the instance
+### launch the instance
 Same as in [AWS_Jumpbox_Setting]（https://github.com/Jinn42/AWS_Jumpbox_Setting）
 
 
