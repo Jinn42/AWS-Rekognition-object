@@ -6,7 +6,7 @@ create 1 public subnet inked to the VPC with /24 IPv4 CIDR block within one AZï¼
 create 1 Internet Gateway associated with the public subnetï¼›  
 1 Route table;  
 Inbound rule:  
-<div align=center><img width="400" height="150" src="https://github.com/Jinn42/AWS-Rekognition object/blob/master/pic/inboundrule.png"/></div>
+<div align=center><img width="400" height="150" src="https://github.com/Jinn42/AWS-Rekognition-object/blob/master/pic/inboundrule.png"/></div>
 
 Outbound rule:  
 ![](https://github.com/Jinn42/AWS-Rekognition-object/blob/master/pic/outboundrule.png)
