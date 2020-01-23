@@ -4,7 +4,14 @@
 create a vpc with /16 IPv4 CIDR block;  
 create 1 public subnet inked to the VPC with /24 IPv4 CIDR block within one AZ；  
 create 1 Internet Gateway associated with the public subnet；  
-1 Route table
+1 Route table;  
+Inbound rule:  
+<div align=center><img width="400" height="150" src="https://github.com/Jinn42/AWS-Rekognition object/blob/master/pic/inboundrule.png"/></div>
+
+Outbound rule:  
+![](https://github.com/Jinn42/AWS-Rekognition-object/blob/master/pic/outboundrule.png)
+
+
 1 Ubuntu instances (Back-end_server)
 1 Security groups
 ## Step2-Coniguration of backend server
