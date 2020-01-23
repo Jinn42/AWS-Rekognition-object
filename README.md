@@ -24,8 +24,8 @@ Outbound rule:
 Same as in [AWS_Jumpbox_Setting]（https://github.com/Jinn42/AWS_Jumpbox_Setting）
 
 
-## Step2-Coniguration of backend server  
-
+## Step2-Coniguration of backend server and link to Jupyter
+### 1.Install Jupyter & open file in virtual machine
 ## -Check if python3 is installed
 ```
 python3
@@ -53,11 +53,49 @@ sudo pip3 install jupyter
 ## -Open Jupyter Notebook
 ```
 nohup jupyter notebook - - ip=0.0.0.0 &
+```
 
+### 2.Use conda to link to Jupyter
 
+- create a new directory
+```
+mkdir tmp
+```
+- Logged into the Ubuntu 18.04 server as a sudo non-root user, move into the /tmp directory and use curl to download the link you copied from the Anaconda website:
+```
+cd tmp/
+curl -O https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh
+```
+- Check with 'ls'
+
+- Run the Anaconda Script
+```
+bash Anaconda3-2019.03-Linux-x86_64.sh
+```
+- Create Anaconda Environment
+```
+conda create -n Jin python=3.7
+```
+- Activate the new environment
+```
+conda activate Jin
+```
+- Link to Jupyter
+```
+pip3 install --user ipykernel
+
+python -m ipykernel install --user --name=Jin
+```
+- Remove virtual environment
+```
+conda env remove -n Jin
+```
 
 
 ## Step3-Clone Github repository
+### Find credential keys in vocareum:
+<div align=center><img width="400" height="150" src="https://github.com/Jinn42/AWS-Rekognition-object/blob/master/pic/AWS_credentials.png"/></div>  
+### Change the AWS credentials (access key id and secret access key) and pic_name in the reko.py code
 
-## Test picture on Rekognition API 
+## Step4 Test picture on Rekognition API 
 
