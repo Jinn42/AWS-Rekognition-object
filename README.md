@@ -96,7 +96,7 @@ conda env remove -n Jin
 ### Find credential keys in vocareum:
 <div align=center><img width="400" height="150" src="https://github.com/Jinn42/AWS-Rekognition-object/blob/master/pic/AWS_credentials.png"/></div>  
 
-### Change the AWS credentials (access key id and secret access key) and pic_name in the reko.py code
+Change the AWS credentials (access key id and secret access key) and pic_name in the reko.py code
 
 ## Step4 Test picture on Rekognition API 
 ```
