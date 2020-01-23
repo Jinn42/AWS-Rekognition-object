@@ -1,6 +1,6 @@
 import boto3
 
-pic = 'Jessica-Meir.JPG'
+pic = 'Pic_name'
 
 client = boto3.client('rekognition', 
                        aws_access_key_id = 'your aws access key id', 
