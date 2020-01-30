@@ -90,7 +90,7 @@ git clone https://github.com/Jinn42/AWS-Rekognition-object.git
 
 Change the AWS credentials (access key id and secret access key) and pic_name in the reko.py code
 
-## Step4 Test picture on Rekognition API & Result . 
+## Step4 Test picture on Rekognition API (reko.py) & Result . 
 ### Tested picture
 <div align=center><img width="600" height="300" src="https://github.com/Jinn42/AWS-Rekognition-object/blob/master/Golden_Retriever_Hund_Dog.jpeg"/></div>  
 
