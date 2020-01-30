@@ -30,17 +30,6 @@ Same as in [AWS_Jumpbox_Setting]（https://github.com/Jinn42/AWS_Jumpbox_Setting
 ```
 python3
 ```
-## -Open python file from local file to virtual machine in another terminal
-```
-cd Downloads
-scp -i keypair.pem asdfgh.py
-ubuntu@ec2-54-144-146-229.compute-1.amazonaws.com:
-```
-## -Then check in virtual machine
-```
-ls
-python3 name.py
-```
 ## -Install pip
 ```
 sudo apt-get update -y
@@ -52,7 +41,7 @@ sudo pip3 install jupyter
 ```
 ## -Open Jupyter Notebook
 ```
-nohup jupyter notebook - - ip=0.0.0.0 &
+jupyter notebook - - ip=0.0.0.0 
 ```
 
 ### 2.Use pew to link to Jupyter
