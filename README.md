@@ -55,44 +55,47 @@ sudo pip3 install jupyter
 nohup jupyter notebook - - ip=0.0.0.0 &
 ```
 
-### 2.Use conda to link to Jupyter
+### 2.Use pew to link to Jupyter
 
-- create a new directory
+- Install pew and create a new pew environment
 ```
-mkdir tmp
+pip3 install pew
 ```
-- Logged into the Ubuntu 18.04 server as a sudo non-root user, move into the /tmp directory and use curl to download the link you copied from the Anaconda website:
 ```
-cd tmp/
-curl -O https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh
+pew new Jin2
 ```
-- Check with 'ls'
+- Exit and go back to thecpew environment
+```
+exit
+```
+```
+pew workon Jin2
+```
+- Check current virtual environment
+```
+pew ls
+```
+- install pandans and then list everything and store them
+```
+pip3 install pandas
+```
+```
+pip3 freeze > myEnv.tx
+```
+- link to Jupyter
+```
+pip3 install ipykernel
 
-- Run the Anaconda Script
+python3 -m ipykernel install --user --name=Jin2
 ```
-bash Anaconda3-2019.03-Linux-x86_64.sh
-```
-- Create Anaconda Environment
-```
-conda create -n Jin python=3.7
-```
-- Activate the new environment
-```
-conda activate Jin
-```
-- Link to Jupyter
-```
-pip3 install --user ipykernel
-
-python -m ipykernel install --user --name=Jin
-```
-- Remove virtual environment
-```
-conda env remove -n Jin
-```
-
 
 ## Step3-Clone Github repository
+```
+sudo apt-get install git
+
+git clone https://github.com/Jinn42/AWS-Rekognition-object.git
+
+```
 ### Find credential keys in vocareum:
 <div align=center><img width="400" height="150" src="https://github.com/Jinn42/AWS-Rekognition-object/blob/master/pic/AWS_credentials.png"/></div>  
 
