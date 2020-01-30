@@ -103,4 +103,4 @@ Change the AWS credentials (access key id and secret access key) and pic_name in
 
 ### Result
 
-<div align=center><img width="400" height="150" src="https://github.com/Jinn42/AWS-Rekognition-object/blob/master/result.png"/></div>  
+<div align=center><img width="600" height="300" src="https://github.com/Jinn42/AWS-Rekognition-object/blob/master/result.png"/></div>  
